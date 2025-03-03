@@ -63,6 +63,6 @@ public class HandOfCards {
      */
     public boolean hasQueenOfSpades() {
         return cards.stream()
-                .anyMatch(card -> card.getAsString().equals("SQ"));
+                .anyMatch(card -> card.getAsString().equals("S12"));
     }
 }
