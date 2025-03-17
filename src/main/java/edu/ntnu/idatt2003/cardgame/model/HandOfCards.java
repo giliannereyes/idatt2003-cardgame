@@ -29,7 +29,7 @@ public class HandOfCards {
         return cards.stream()
                 .collect(Collectors.groupingBy(PlayingCard::getSuit, Collectors.counting()))
                 .values().stream()
-                .allMatch(count -> count >= 5);
+                .anyMatch(count -> count >= 5);
     }
 
     /**
